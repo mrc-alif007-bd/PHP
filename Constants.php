@@ -9,15 +9,15 @@
     <!-- Unlike variables, constants are automatically global across the entire script. -->
     <!-- Using define -->
     <?
-    define("HELLO","Welcome to PHP");
+    define("HELLO","Welcome to PHP<br>");
 
     echo HELLO;
 
     ?>
     <!-- const Keyword -->
      <?
-     const NAME = "<br>Taufikur Rahman";
-     const AGE ="<br>20";
+     const NAME = "Taufikur Rahman<br>";
+     const AGE ="20<br>";
 
      echo "NAME :" . NAME . "AGE :" . AGE ;
 
