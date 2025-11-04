@@ -24,15 +24,19 @@
     if (isset($_REQUEST['submit'])) {
         $skills_output = "";
         $language_output = "";
+        $name = "";
+        $email = "";
         $errors = [];
         if (!isset($_REQUEST['fullname']) || $_REQUEST['fullname'] == "") {
-            $errors[] = "Enter Your Name";
+            $errnam = "Enter Your Name"  . "<br>";
+            echo $errnam;
         } else {
             $name = $_REQUEST['fullname'];
         }
 
         if (!isset($_REQUEST['email']) || $_REQUEST['email'] == "") {
-            $errors[] = "Enter Your Email";
+            $erreml = "Enter Your Email"  . "<br>";
+            echo $erreml;
         } else {
             $email = $_REQUEST['email'];
             if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
