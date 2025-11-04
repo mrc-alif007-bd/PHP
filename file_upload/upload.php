@@ -19,12 +19,12 @@
 
     $tmpFile = $_FILES['myfile']['tmp_name'];
     $FileSize = $_FILES['myfile']['size']; //byte...
-    $maxsize = 320; //1mb..
+    $maxsize = 320; //40kB..
 
     $errors = [];
 
 
-     $ext = strtolower(pathinfo($filename, PATHINFO_EXTENSION)) ;
+    $ext = strtolower(pathinfo($filename, PATHINFO_EXTENSION)) ;
 
     $allowedTypes = ["jpg","png","jpeg"];   
 
