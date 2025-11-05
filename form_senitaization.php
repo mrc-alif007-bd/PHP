@@ -108,9 +108,15 @@
 
     <form action="" method="post">
         Name : <br>
-        <input type="text" name="fullname" placeholder="Enter Your Name"> <br>
+        <input type="text" name="fullname" placeholder="Enter Your Name" 
+        value="<?php if(isset($_REQUEST['fullname'])){
+            echo ($_REQUEST['fullname']) ;
+            } ?>"> <br>
         Email : <br>
-        <input type="text" name="email" placeholder="Enter Your Email"><br>
+        <input type="text" name="email" placeholder="Enter Your Email" 
+         value="<?php if(isset($_REQUEST['email'])){
+            echo ($_REQUEST['email']) ;
+            } ?>">  <br>
         language : <br>
         <select name="language[]" multiple="multiple" id="">
             <option value="Csharp">C#</option>
@@ -129,6 +135,8 @@
         <input type="submit" value="SUBMIT" name="submit"> <br><br>
 
     </form>
+
+    
 
 </body>
 
