@@ -18,7 +18,7 @@
    
 
     $tmpFile = $_FILES['myfile']['tmp_name'];
-    $FileSize = $_FILES['myfile']['size']; //byte...
+    $FileSize = $_FILES['myfile']['size']; //byte...  1kb=8b
     $maxsize = 320; //40kB..
 
     $errors = [];

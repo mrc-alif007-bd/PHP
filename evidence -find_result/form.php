@@ -15,9 +15,10 @@
     <?php
     if(isset($_REQUEST['search'])){
         $stid = $_REQUEST['student_id'];
+
         include ("resultClass.php");
 
-        $sheet = new student("result_sheet.txt");
+        $sheet = new student("result_sheet.txt"); // Parameter -> Class 
         $result = $sheet->result($stid);
         echo $result;
     }
