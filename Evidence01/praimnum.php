@@ -6,7 +6,7 @@
     <title>Prime number check</title>
 </head>
 <body>
-    <h3>Cheching Number if Prime or not</h3>
+    <h3>Checking Number if Prime or not</h3>
 
     <?
     if(isset($_REQUEST['submit'])){
@@ -29,9 +29,10 @@
                     exit;
                 }
             }
-
+            echo "$mynum is a prime number";
+            exit;
         }
-        echo "$mynum is a prime number";
+        
        
     }
     ?>
