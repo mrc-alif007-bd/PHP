@@ -15,7 +15,7 @@
 
 <?php 
 
-$sql = "SELECT * FROM students";
+$sql = "SELECT * FROM students";//asc //"SELECT * FROM students ORDER BY employeeID desc";
 $result = $db->query($sql); 
 //$row = $result->fetch_assoc();
 
