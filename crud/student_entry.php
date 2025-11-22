@@ -22,7 +22,7 @@
         <input type="submit" name="submit" value="SUBMIT">
 
     </form>
-    <a href="pawd_68_students.php">Student List</a>
+    <a href="index.php">Student List</a>
 
     <?php
     include_once("db_config.php");
